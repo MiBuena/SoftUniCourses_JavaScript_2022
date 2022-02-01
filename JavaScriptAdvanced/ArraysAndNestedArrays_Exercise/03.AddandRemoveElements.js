@@ -9,14 +9,14 @@ function solve(commands) {
 
         let command = commands[index];
 
-        if(command == "add") {
+        if(command === "add") {
             numbersArray.push(initialNumber);
         } else {
             numbersArray.pop();
         }       
     }
 
-    if(numbersArray.length == 0) {
+    if(numbersArray.length === 0) {
         console.log("Empty");
     } else {
 

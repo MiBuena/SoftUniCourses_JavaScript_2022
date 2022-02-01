@@ -57,7 +57,7 @@ function solve(moves) {
             break;
         }
 
-        if (playerSign == "X") {
+        if (playerSign === "X") {
             playerSign = "O";
         } else {
             playerSign = "X";
@@ -82,7 +82,7 @@ function solve(moves) {
 
         for (let row = 0; row < matrix.length; row++) {
             for (let col = 0; col < matrix[row].length; col++) {
-                if(matrix[row][col] == false) {
+                if(matrix[row][col] === false) {
                     allAreTaken = false;
                     break;
                 } 
@@ -97,7 +97,7 @@ function solve(moves) {
         let col = 2;
         for (let row = 0; row < matrix.length; row++) {
 
-            if (matrix[row][col] != playerSign) {
+            if (matrix[row][col] !== playerSign) {
                 return false;
             }
 
@@ -113,7 +113,7 @@ function solve(moves) {
 
         for (let row = 0; row < matrix.length; row++) {
 
-            if (matrix[row][row] != playerSign) {
+            if (matrix[row][row] !== playerSign) {
                 return false;
             }
         }
@@ -126,7 +126,7 @@ function solve(moves) {
         let playerWins = true;
 
         for (let col = 0; col < matrix[inputRow].length; col++) {
-            if (matrix[inputRow][col] != playerSign) {
+            if (matrix[inputRow][col] !== playerSign) {
                 playerWins = false;
                 break;
             }
@@ -139,7 +139,7 @@ function solve(moves) {
         let playerWins = true;
 
         for (let row = 0; row < matrix.length; row++) {
-            if (matrix[row][inputCol] != playerSign) {
+            if (matrix[row][inputCol] !== playerSign) {
                 playerWins = false;
             }
         }

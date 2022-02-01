@@ -24,7 +24,7 @@ function solve(matrixRows, matrixCols) {
 
         result = fillUp(result[0], result[1], result[2], matrixRows, matrixCols, matrix, result[3]);
 
-        if(result[3]==false){
+        if(result[3]===false){
             break;
         }
     }
@@ -39,7 +39,7 @@ function solve(matrixRows, matrixCols) {
 
         for (col; col < matrixCols; col++) {
 
-            if (matrix[startRow][col] != undefined) {
+            if (matrix[startRow][col] !== undefined) {
                 break;
             }
 
@@ -57,7 +57,7 @@ function solve(matrixRows, matrixCols) {
 
         for (row; row < matrixRows; row++) {
             
-            if(matrix[row][startCol] != undefined) {
+            if(matrix[row][startCol] !== undefined) {
                 break;
             }
 
@@ -75,7 +75,7 @@ function solve(matrixRows, matrixCols) {
 
         for (col; col >= 0; col--) {
             
-            if(matrix[startRow][col] != undefined) {
+            if(matrix[startRow][col] !== undefined) {
                 break;
             }
 
@@ -91,7 +91,7 @@ function solve(matrixRows, matrixCols) {
 
         let row = startRow;
         for (row; row >= 0; row--) {
-            if(matrix[row][startCol] != undefined) {
+            if(matrix[row][startCol] !== undefined) {
                 break;
             } 
             

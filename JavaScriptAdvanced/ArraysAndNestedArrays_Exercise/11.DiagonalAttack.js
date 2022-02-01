@@ -10,7 +10,7 @@ function solve(input) {
     let sumLeftDiagonal = checkLeftDiagonal(matrix);
     let sumRightDiagonal = checkRightDiagonal(matrix);
 
-    if (sumLeftDiagonal == sumRightDiagonal) {
+    if (sumLeftDiagonal === sumRightDiagonal) {
 
         fillNotDiagonalSquares(sumLeftDiagonal, matrix);
     }
